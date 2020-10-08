@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Title -->
+    <title>Задача JS - Анимированная сортировка</title>
+    <!-- Style -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__title">Задача JS</div>
+            <div class="header__subtitle">Анимированная сортировка</div>
+        </div>
+        <div class="data">
+            <div class="data__title">Инструкция:</div>
+            <p>
+                Для начала визуализации нажмите "Начать сортировку".<br>
+                Для генерации нового набора чисел нажмите "Сгенерировать набор".<br>
+                Для отмены сортировки нажмите "Сброс".
+            </p>
+            <div class="data__title">Предлагается на выбор два алгоритма:</div>
+            <ul>
+                <li>Сортировка пузырьком</li>
+                <li>Сортировка бинарным деревом</li>
+            </ul>
+        </div>
+        <div class="controls">
+            <div class="controls__row">
+                <button id="controls__start">Начать сортировку</button>
+                <button id="controls__generate">Сгенерировать набор</button>
+            </div>
+            <div class="controls__row">
+                <select id="controls__select">
+                    <option>Сортировка пузырьком</option>
+                    <option>Сортировка бинарным деревом</option>
+                </select>
+                <button id="controls__reset">Сброс</button>
+            </div>
+        </div>
+        <div class="data data--before">
+            <div class="data__title">До сортировки:</div>
+            <div class="data__storage"></div>
+        </div>
+        <div class="data data--bubble"></div>
+        <div class="data data--tree"></div>
+        <div class="data data--after">
+            <div class="data__title">После сортировки:</div>
+            <div class="data__storage"></div>
+        </div>
+
+    </div>
+    <!-- Script -->
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- End Script -->
+</body>
+</html>
